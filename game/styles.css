@@ -33,3 +33,15 @@ body {
   .cell:hover {
     background-color: #e3e3e3;
   }
+
+  @media (max-width: 600px) {
+    .cell {
+        width: 60px;
+        height: 60px;
+    }
+  
+    #tic-tac-toe-board {
+        grid-template-columns: repeat(3, 60px);
+        grid-template-rows: repeat(3, 60px);
+    }
+  }
